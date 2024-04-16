@@ -1,0 +1,84 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fce4ec; 
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #e91e63; 
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e91e63; 
+}
+
+input, select {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #e91e63; 
+    background-color: #f8bbd0; 
+    color: #333; 
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-bottom-color: #ad1457; 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e91e63; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ad1457;
+}
+
+.list-container {
+    background-color: #fff; 
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.list-container h2 {
+    color: #e91e63; 
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.list-container .item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8bbd0; 
+    border-left: 4px solid #e91e63; 
+    color: #333; 
+}

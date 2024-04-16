@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Despesas</title>
+    <link rel="stylesheet" href="atividade.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Despesas</h1>
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+            <option value="Maquiagem">Maquiagem</option>
+            <option value="Roupas">Roupas</option>
+            <option value="Sapatos">Sapatos</option>
+            <option value="SkinCare">SkinCare</option>
+            <option value="Comida">Comida</option>
+            <option value="outros">Outros</option>
+        </select>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao">
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor">
+        <label for="data">Data:</label>
+        <input type="date" id="data">
+        <label for="pagamento">Método de Pagamento:</label>
+        <select id="pagamento">
+            <option value="dinheiro">Dinheiro</option>
+            <option value="credito">Cartão de Crédito</option>
+            <option value="debito">Cartão de Débito</option>
+            <option value="pix">PIX</option>
+        </select>
+        <button id="botaoAdicionarDespesa" onclick="adicionarDespesa()">Adicionar Despesa</button>
+        <button id="botaoSalvarDespesa" style="display: none;" onclick="salvarDespesa()">Salvar Despesa</button>
+    </div>
+
+    <div class="list-container">
+        <h2>Lista de Despesas</h2>
+        <div id="lista-despesas"></div>
+    </div>
+
+    <script src="atividade.js"></script>
+</body>
+</html>
